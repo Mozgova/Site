@@ -1,0 +1,97 @@
+body {
+    font-family: Verdana;
+    font-size: 13px;
+    color: rgba(20,20,21, 1);
+    background: url(1.jpg),url(2.jpg) ;
+    background-repeat: repeat-y, repeat;
+    background-position: 290px 20px;
+    background-size: 60%, 20%;
+}
+
+.main {  
+    width: 780px;
+    height: 800px;
+    background-color: rgba(200,200,241, 0.7);
+    margin-left: 300px;
+    position: relative;
+      }
+
+.second {
+    background: rgb(13,63,83);
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    right: 15px;
+   
+}
+.ttt{
+    background: rgb(114,63,83);
+    border: 3px solid rgb(141,163,83);
+    border-radius: 5px;
+    position: fixed;
+    top: 140px;
+    right: 49px;    
+}
+ul.list1{
+    list-style-type:decimal;
+}
+ul.button{
+    background: rgb(114,63,83);
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+}
+.shadow{
+    display:block;
+    width: 100px;
+    height: 100px;
+    background: url(2.jpg);
+    cursor: pointer;
+  border-radius: 50%;
+    box-shadow:0 3px 20px rgba(0,0,0,.5),
+        inset 0 2px 0 rgba(255,255,255,.5) ;
+}
+.button li{
+    background: url(3.jpg) no-repeat;
+    display: inline-block;
+    width: 134px;
+    height: 26px; 
+    background-position: -50px -153px;
+}
+.button .b1:hover {
+    background-position: -50px -173px;
+}
+.button .b1:active {
+    background-position: -50px -193px;
+}
+img {
+    width: 470px;
+    height: 280px;
+    float: right;
+}
+
+a
+{display: block;
+height:100;}
+
+a[href$=".jpg"]::after {
+    content: ' (jpg)';:
+    font-size: 10px;
+    color: #888;
+}
+
+a[href$=".png"]::after {
+    content: ' (png)';
+    font-size: 10px;
+    color: #888;
+}
+
+a[href$=".mp3"]::after {
+    content: ' (mp3)';
+    font-size: 10px;
+    color: #888;
+}
+
